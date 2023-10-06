@@ -1,9 +1,9 @@
 -i https://pypi.org/simple
-flask==2.0.0
+flask>=2.0,<3.0  # Flask 2.0.0 depends on Werkzeug>=2.0
 numpy==1.17.4
 tensorflow==2.14.0
 opencv-python-headless
-werkzeug==0.16.0
+werkzeug>=2.0,<3.0  # To be compatible with Flask 2.0.0
 matplotlib==3.1.1
 gunicorn==19.5.0
 Pillow==6.0.0
