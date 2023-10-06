@@ -1,11 +1,11 @@
 -i https://pypi.org/simple
-flask>=2.0,<3.0  # Flask 2.0.0 depends on Werkzeug>=2.0
-numpy==1.17.4
+flask>=2.0,<3.0  # Compatible with Werkzeug>=2.0
+numpy>=1.23.5,<2.0  # To be compatible with tensorflow 2.14.0
 tensorflow==2.14.0
 opencv-python-headless
 werkzeug>=2.0,<3.0  # To be compatible with Flask 2.0.0
-matplotlib==3.1.1
-gunicorn==19.5.0
-Pillow==6.0.0
+matplotlib>=3.6.0,<4.0  # To resolve conflicts with other packages
+gunicorn>=19.5.0,<20.0  # Updated to a compatible range
+Pillow>=8.3.2,<9.0  # To resolve conflicts with other packages
 image
 scipy
